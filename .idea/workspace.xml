@@ -125,6 +125,7 @@
         <item itemvalue="TestNG.InsiderTest.testHomePageLoadsCorrectly" />
         <item itemvalue="TestNG.InsiderTest.testCareersPageBlocksVisible" />
         <item itemvalue="TestNG.InsiderTest" />
+        <item itemvalue="TestNG.InsiderTest.testQAJobsFilterAndValidation" />
       </list>
     </recent_temporary>
   </component>
@@ -140,11 +141,6 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="f991cadd-22cb-4dbb-8bd6-4443c3320469" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -155,24 +151,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-        <entry key="f991cadd-22cb-4dbb-8bd6-4443c3320469">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
