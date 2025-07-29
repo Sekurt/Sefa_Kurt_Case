@@ -57,6 +57,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -73,10 +76,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.InsiderTest.testQAJobsFilterAndValidation">
+  <component name="RunManager" selected="TestNG.InsiderTest">
     <configuration name="InsiderTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="insider-career-test" />
       <option name="PACKAGE_NAME" value="" />
@@ -126,10 +132,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.InsiderTest" />
         <item itemvalue="TestNG.InsiderTest.testQAJobsFilterAndValidation" />
         <item itemvalue="TestNG.InsiderTest.testHomePageLoadsCorrectly" />
         <item itemvalue="TestNG.InsiderTest.testCareersPageBlocksVisible" />
-        <item itemvalue="TestNG.InsiderTest" />
         <item itemvalue="TestNG.InsiderTest.testQAJobsFilterAndValidation" />
       </list>
     </recent_temporary>
@@ -175,26 +181,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Pages/QAJobsPage.java</url>
-          <line>127</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Pages/QAJobsPage.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Pages/QAJobsPage.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Pages/QAJobsPage.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

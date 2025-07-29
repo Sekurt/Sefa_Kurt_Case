@@ -36,22 +36,6 @@ public class QAJobsPage extends BasePage {
     }
 
     public void filterByLocationAndDepartment(String location, String department) throws InterruptedException {
-        /*
-        WebElement locationSelect = driver.findElement(locationFilter);
-        locationSelect.click();
-
-        WebElement locationIst = driver.findElement(locationIstanbul);
-        locationIst.click();
-        //locationSelect.findElement(By.xpath(".//option[contains(text(),'" + location + "')]")).click();
-
-        WebElement departmentSelect = driver.findElement(departmentFilter);
-        departmentSelect.click();
-
-        WebElement departmenQa = driver.findElement(jobDepartmenQa);
-        departmenQa.click();
-
-        departmentSelect.findElement(By.xpath(".//option[contains(text(),'" + department + "')]")).click();
-    */
 
       //  WebElement departmentDropdown = driver.findElement(By.xpath("//select[@name='filter-by-location']"));
         WebElement departmentDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(
@@ -61,30 +45,17 @@ public class QAJobsPage extends BasePage {
                 By.xpath("//select[@name='filter-by-location']"),
                 "Istanbul, Turkiye"
         ));
-// Select objesi oluştur
+        // Select objesi oluştur
         Select selectDepartment = new Select(departmentDropdown);
 
 
 
-// 1) Text ile seç
+        // 1) Text ile seç
         selectDepartment.selectByVisibleText("Istanbul, Turkiye");
 
     }
 
     public boolean verifyAllJobsMatchFilters(String expectedLocation, String expectedDepartment) throws InterruptedException {
-       /* List<WebElement> jobCards = driver.findElements(By.xpath("//div[@id='jobs-list']"));
-        int matchCount = 0;
-        for (WebElement card : jobCards) {
-            String department = card.findElement(By.cssSelector(".position-department")).getText().trim();
-            String location = card.findElement(By.cssSelector(".position-location")).getText().trim();
-            if (department.equals(expectedDepartment) && location.equals(expectedLocation)) {
-                matchCount++;
-                System.out.println("eşleşen ilan bulundu:");
-                System.out.println(" - Departman: " + department);
-                System.out.println(" - Lokasyon: " + location);
-            }
-        }
-        System.out.println("Toplam eşleşen ilan sayısı: " + matchCount);*/
         Thread.sleep(3000);
         List<WebElement> jobCards = driver.findElements(By.xpath("//div[@id='jobs-list']//div[contains(@class,'position-list-item')]"));
         int matchCount = 0;
@@ -95,26 +66,11 @@ public class QAJobsPage extends BasePage {
             String location = jobCard.findElement(By.cssSelector(".position-location")).getText().trim();
             if (department.equals("Quality Assurance") && location.equals("Istanbul, Turkiye")) {
                 matchCount++;
-                System.out.println(":white_check_mark: Eşleşen ilan: " + department + " - " + location);
+                System.out.println("Eşleşen ilan: " + department + " - " + location);
             }
         }
         System.out.println("Toplam eşleşen ilan sayısı: " + matchCount);
         return matchCount > 0;
-
-        /*        waitForVisibility(driver.findElement(By.xpath("//div[@id='jobs-list']")));
-        List<WebElement> jobs = driver.findElements(jobList);
-        if (jobs.isEmpty()) return false;
-
-        for (WebElement job : jobs) {
-            String title = job.findElement(jobTitle).getText();
-            String location = job.findElement(jobLocation).getText();
-            String department = job.findElement(jobDepartment).getText();
-
-            if (!location.equalsIgnoreCase(expectedLocation)) return false;
-            if (!department.equalsIgnoreCase(expectedDepartment)) return false;
-            if (!title.toLowerCase().contains("quality")) return false;
-        }
-        return true;*/
     }
 
     public void hoverOnRole(){
